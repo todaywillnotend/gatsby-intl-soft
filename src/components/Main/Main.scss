@@ -1,0 +1,119 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.main {
+  margin: 55px 0;
+
+  @include desktop {
+    margin: 92px 0;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    @include desktop {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &_blue {
+      color: $blue;
+    }
+  }
+}
+
+.business {
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 320px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/main-mobile.png");
+
+  @include desktop {
+    font-size: 24px;
+    background-image: url("../../images/krug.png");
+    background-size: 160px;
+    display: flex;
+    gap: 24px;
+    padding-top: 118px;
+    background-position: right top;
+  }
+
+  & > * {
+    margin: 0;
+  }
+
+  &__image {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__content {
+    max-width: 270px;
+
+    @include desktop {
+      max-width: 480px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+    @include desktop {
+      padding-left: 40px;
+    }
+  }
+
+  &__item {
+    color: $blue;
+  }
+
+  &__other {
+    &_underline {
+      text-decoration: underline;
+    }
+  }
+}
+
+.goal {
+  @include desktop {
+    margin-top: 73px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 220px;
+
+    @include desktop {
+      font-size: 28px;
+      max-width: unset;
+    }
+
+    &_blue {
+      color: $blue;
+    }
+  }
+
+  &__desc {
+    font-size: 12px;
+    margin-left: 13px;
+
+    @include desktop {
+      font-size: 24px;
+      line-height: 29px;
+      margin-left: 42px;
+    }
+  }
+}

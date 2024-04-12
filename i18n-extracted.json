@@ -1,17 +1,125 @@
 {
-  "about-us": {
-    "defaultMessage": "About us"
+  "business-and": {
+    "defaultMessage": "и"
   },
-  "hello-world": {
-    "defaultMessage": "Hello World!"
+  "business-item-1": {
+    "defaultMessage": "Увеличивать доход"
   },
-  "homepage": {
-    "defaultMessage": "Homepage"
+  "business-item-2": {
+    "defaultMessage": "Эффективно принимать решения"
   },
-  "learn-more-about-us": {
-    "defaultMessage": "Learn more about us"
+  "business-item-3": {
+    "defaultMessage": "Лучше понимать клиентов"
   },
-  "welcome-on-our-website": {
-    "defaultMessage": "Welcome on our multi-language website"
+  "business-item-4": {
+    "defaultMessage": "Предотвращать фрод"
+  },
+  "business-item-5": {
+    "defaultMessage": "Оптимизировать операционку"
+  },
+  "business-other": {
+    "defaultMessage": "многое другое c использованием ML и Big Data"
+  },
+  "business-title": {
+    "defaultMessage": "Помогаем бизнесу"
+  },
+  "goal-desc": {
+    "defaultMessage": "Мы исходим от потребностей бизнеса, предлагаем те решения, которые действительно помогут клиенту, а не просто модные инструменты"
+  },
+  "goal-title-1": {
+    "defaultMessage": "Рост вашего бизнеса"
+  },
+  "goal-title-2": {
+    "defaultMessage": "наша ключевая задача"
+  },
+  "main-title-1": {
+    "defaultMessage": "Консалтинг в области"
+  },
+  "main-title-2": {
+    "defaultMessage": "больших данных и машинного обучения"
+  },
+  "navigation-1": {
+    "defaultMessage": "Услуги"
+  },
+  "navigation-2": {
+    "defaultMessage": "Команда"
+  },
+  "navigation-3": {
+    "defaultMessage": "Контакты"
+  },
+  "person-1-name": {
+    "defaultMessage": "Чемурзиев Умар"
+  },
+  "person-1-text": {
+    "defaultMessage": "Senior product analyst Raiffeisen bank, ex Tinkoff"
+  },
+  "person-2-name": {
+    "defaultMessage": "Гитинов Наби"
+  },
+  "person-2-text": {
+    "defaultMessage": "Backend developer ex Yandex"
+  },
+  "person-3-name": {
+    "defaultMessage": "Неклюдов Андрей"
+  },
+  "person-3-text": {
+    "defaultMessage": "ML engineer ex Glidewell"
+  },
+  "service-item-1-text-1": {
+    "defaultMessage": "Разработка платформы для автоматизации процесса работы с A/B-тестами"
+  },
+  "service-item-1-text-2": {
+    "defaultMessage": "Оптимизация и разработка метрик"
+  },
+  "service-item-1-text-3": {
+    "defaultMessage": "Построение иерархии метрик"
+  },
+  "service-item-1-text-4": {
+    "defaultMessage": "Разработка ETL-процессов"
+  },
+  "service-item-1-text-5": {
+    "defaultMessage": "Система дашбордов"
+  },
+  "service-item-1-title": {
+    "defaultMessage": "Аналитика"
+  },
+  "service-item-2-text-1": {
+    "defaultMessage": "Внедрение современных решений"
+  },
+  "service-item-2-text-2": {
+    "defaultMessage": "Миграция с одной базы данных на другую"
+  },
+  "service-item-2-text-3": {
+    "defaultMessage": "Оптимизация взаимодействия с базой данных"
+  },
+  "service-item-2-text-4": {
+    "defaultMessage": "Повышения надежности взаимодействия с базой данных"
+  },
+  "service-item-2-text-5": {
+    "defaultMessage": "Улучшение наблюдаемости за базой данных"
+  },
+  "service-item-2-title": {
+    "defaultMessage": "Базы данных"
+  },
+  "service-item-3-text-1": {
+    "defaultMessage": "Интеграция моделей в существующую инфраструктуру и бизнес-процессы"
+  },
+  "service-item-3-text-2": {
+    "defaultMessage": "Решение ваших задач с использованием NLP, CV"
+  },
+  "service-item-3-text-3": {
+    "defaultMessage": "Оптимизация существующих моделей и алгоритмов"
+  },
+  "service-item-3-text-4": {
+    "defaultMessage": "Персонализация предложений, продуктов или услуг с использованием моделей"
+  },
+  "service-item-3-text-5": {
+    "defaultMessage": "Проведение технического аудита текущих решений на основе машинного обучения"
+  },
+  "service-item-3-title": {
+    "defaultMessage": "Машинное обучение"
+  },
+  "services-title": {
+    "defaultMessage": "Наши ключевые компетенции"
   }
 }

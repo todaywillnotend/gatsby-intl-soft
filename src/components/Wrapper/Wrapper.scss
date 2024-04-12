@@ -1,0 +1,15 @@
+@import "src/styles/mixins";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 27px;
+
+  @include desktop {
+    padding: 50px 100px;
+  }
+}
+
+.content {
+  width: 1080px;
+}

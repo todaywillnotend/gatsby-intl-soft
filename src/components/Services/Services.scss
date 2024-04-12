@@ -1,0 +1,59 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.service {
+  margin-top: 60px;
+
+  @include desktop {
+    margin-top: 91px;
+    background-repeat: no-repeat;
+    background-position: right top 160px;
+    background-image: url("../../images/triangle.png");
+  }
+
+  &__items {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include desktop {
+      margin-top: 78px;
+      gap: 22px;
+    }
+  }
+}
+
+.service-item {
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $blue;
+    margin: 0;
+
+    @include desktop {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    @include desktop {
+      margin-top: 22px;
+      font-size: 16px;
+    }
+
+    & > p {
+      margin: 5px 0;
+
+      @include desktop {
+        margin: 10px 0;
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
-const messages = require("./i18n-translations.json")
-const {languages} = require("./src/i18n");
-const {defaultLanguage} = require("./src/i18n");
+const messages = require("./i18n-translations.json");
+const { languages } = require("./src/i18n");
+const { defaultLanguage } = require("./src/i18n");
 
-exports.onCreatePage = async ({page, actions}) => {
-  const {createPage, deletePage} = actions;
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
   return new Promise((resolve) => {
     let path = page.path;
     deletePage(page);
@@ -11,7 +11,7 @@ exports.onCreatePage = async ({page, actions}) => {
     for (let language of languages) {
       const isDefaultLanguage = language === defaultLanguage;
       if (!isDefaultLanguage) {
-        path = '/' + language + page.path;
+        path = "/" + language + page.path;
       }
 
       const pageForLanguage = Object.assign({}, page, {
@@ -19,11 +19,11 @@ exports.onCreatePage = async ({page, actions}) => {
         path: path,
         context: {
           language,
-          messages: messages[language]
-        }
+          messages: messages[language],
+        },
       });
-      createPage(pageForLanguage)
+      createPage(pageForLanguage);
     }
-    resolve()
-  })
+    resolve();
+  });
 };

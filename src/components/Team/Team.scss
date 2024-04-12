@@ -1,0 +1,85 @@
+@import "src/styles/mixins";
+
+.team {
+  margin-top: 60px;
+
+  @include desktop {
+    margin-top: 50px;
+  }
+
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include desktop {
+      margin-top: 79px;
+      flex-direction: row;
+      align-items: unset;
+      justify-content: center;
+      gap: 60px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 12px;
+    margin-top: 50px;
+
+    @include desktop {
+      font-size: 24px;
+      margin-top: 57px;
+      margin-left: 42px;
+      width: 61%;
+    }
+  }
+}
+
+.person {
+  max-width: 160px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    max-width: 240px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+
+    @include desktop {
+      margin-top: 15px;
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 14px;
+    font-size: 12px;
+
+    @include desktop {
+      margin-top: 10px;
+      font-size: 16px;
+      max-width: 90%;
+    }
+  }
+
+  &__image {
+    img {
+      width: 140px !important;
+
+      @include desktop {
+        width: 200px !important;
+      }
+    }
+  }
+}

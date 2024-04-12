@@ -1,13 +1,13 @@
 import React from "react";
 import SimpleLocalize from "../SimpleLocalize";
-import {FormattedMessage} from "react-intl";
+import { FormattedMessage } from "react-intl";
 import LinkTranslated from "../LinkTranslated";
 
 function AboutPage(props) {
   // const language = props.pageContext.language;
   return (
     <SimpleLocalize {...props}>
-      <h1>
+      {/* <h1>
         <FormattedMessage
           id="about-us"
           defaultMessage="About us"
@@ -22,8 +22,7 @@ function AboutPage(props) {
           id="homepage"
           defaultMessage="Homepage"
         />
-      </LinkTranslated>
-
+      </LinkTranslated> */}
     </SimpleLocalize>
   );
 }

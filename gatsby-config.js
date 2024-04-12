@@ -3,5 +3,10 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "SimpleLocalize Example",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-sass",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    // "gatsby-source-filesystem",
+  ],
 };
