@@ -2,34 +2,69 @@ import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 import { StaticImage } from "gatsby-plugin-image";
 import cn from "classnames";
+import { navigationItems } from "../../const";
 
 import "./Form.scss";
+
+const initialFormData = {
+  name: "",
+  contact: "",
+  message: "",
+};
 
 export const Form = () => {
   const intl = useIntl();
 
-  const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState(initialFormData);
 
   const isButtonEnabled = Boolean(formData.contact);
+
+  const successMessage = intl.formatMessage({
+    id: "form-success",
+    defaultMessage:
+      "Спасибо за ваше обращение! Мы получили ваше сообщение и свяжемся с вами в ближайшее время.",
+  });
+
+  const errorMessage = intl.formatMessage({
+    id: "form-error",
+    defaultMessage:
+      "Что-то пошло не так, попробуйте еще раз немного позже или свяжитесь другим удобным способом.",
+  });
 
   const onSubmitForm = async (event) => {
     event.preventDefault();
 
     try {
-      // await fetch()
+      // Тут делаем запрос
+      // const url = "";
+      // await fetch(url, {
+      //   method: "POST", // *GET, POST, PUT, DELETE, etc.
+      //   mode: "cors", // no-cors, *cors, same-origin
+      //   cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      //   credentials: "same-origin", // include, *same-origin, omit
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     // 'Content-Type': 'application/x-www-form-urlencoded',
+      //   },
+      //   redirect: "follow", // manual, *follow, error
+      //   referrerPolicy: "no-referrer", // no-referrer, *client
+      //   body: JSON.stringify(data), // body data type must match "Content-Type" header
+      // });
 
-      window.alert("Скоро мы с вами свяжемся");
+      alert(successMessage);
+      setFormData(initialFormData);
     } catch (error) {
       console.error(error);
+      alert(errorMessage);
     }
   };
 
   return (
-    <form className="form" onSubmit={onSubmitForm}>
+    <form
+      className="form"
+      onSubmit={onSubmitForm}
+      id={navigationItems.CONTACTS}
+    >
       <p className="form__title">
         <span className="form__title_blue">
           <FormattedMessage id="form-title-1" defaultMessage="Напишите нам" />
@@ -41,6 +76,7 @@ export const Form = () => {
       </p>
       <div className="form__content">
         <input
+          value={formData.name}
           type="text"
           className="form__input"
           placeholder={intl.formatMessage({
@@ -55,6 +91,7 @@ export const Form = () => {
           }
         />
         <input
+          value={formData.contact}
           type="text"
           className="form__input"
           placeholder={intl.formatMessage({
@@ -69,8 +106,7 @@ export const Form = () => {
           }
         />
         <textarea
-          name=""
-          id=""
+          value={formData.message}
           className="form__textarea"
           placeholder={intl.formatMessage({
             id: "form-message-placeholder",

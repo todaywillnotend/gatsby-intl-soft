@@ -42,7 +42,15 @@
     "service-item-3-title": "Машинное обучение",
     "services-title": "Наши ключевые компетенции",
     "team-description": "Наши сотрудники закончили топ ВУЗы и поработали в ведущих технологических компаниях",
-    "team-title": "Команда"
+    "team-title": "Команда",
+    "form-button": "Отправить",
+    "form-contact-placeholder": "e-mail / telegram / номер телефона",
+    "form-message-placeholder": "Ваше сообщение",
+    "form-name-placeholder": "Имя",
+    "form-title-1": "Напишите нам",
+    "form-title-2": "о своих идеях или вопросах, и мы скоро свяжемся с вами!",
+    "form-success": "Спасибо за ваше обращение! Мы получили ваше сообщение и свяжемся с вами в ближайшее время.",
+    "form-error": "Что-то пошло не так, попробуйте еще раз немного позже или свяжитесь другим удобным способом."
   },
   "en": {
     "business-and": "and",
@@ -87,6 +95,14 @@
     "service-item-3-title": "Machine Learning",
     "services-title": "Our key competencies",
     "team-description": "Our employees have graduated from top universities and worked at leading technology companies",
-    "team-title": "Team"
+    "team-title": "Team",
+    "form-button": "Send",
+    "form-contact-placeholder": "e-mail / telegram / telephone number",
+    "form-message-placeholder": "Your message",
+    "form-name-placeholder": "Name",
+    "form-title-1": "Write to us",
+    "form-title-2": "about your ideas or questions, and we will contact you soon!",
+    "form-success": "Thank you for reaching out! We have received your message and will contact you shortly.",
+    "form-error": "Something went wrong, please try again later or contact us by another convenient method."
   }
 }

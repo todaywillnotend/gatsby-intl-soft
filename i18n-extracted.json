@@ -23,6 +23,30 @@
   "business-title": {
     "defaultMessage": "Помогаем бизнесу"
   },
+  "form-button": {
+    "defaultMessage": "Отправить"
+  },
+  "form-contact-placeholder": {
+    "defaultMessage": "e-mail / telegram / номер телефона"
+  },
+  "form-error": {
+    "defaultMessage": "Что-то пошло не так, попробуйте еще раз немного позже или свяжитесь другим удобным способом."
+  },
+  "form-message-placeholder": {
+    "defaultMessage": "Ваше сообщение"
+  },
+  "form-name-placeholder": {
+    "defaultMessage": "Имя"
+  },
+  "form-success": {
+    "defaultMessage": "Спасибо за ваше обращение! Мы получили ваше сообщение и свяжемся с вами в ближайшее время."
+  },
+  "form-title-1": {
+    "defaultMessage": "Напишите нам"
+  },
+  "form-title-2": {
+    "defaultMessage": "о своих идеях или вопросах, и мы скоро свяжемся с вами!"
+  },
   "goal-desc": {
     "defaultMessage": "Мы исходим от потребностей бизнеса, предлагаем те решения, которые действительно помогут клиенту, а не просто модные инструменты"
   },

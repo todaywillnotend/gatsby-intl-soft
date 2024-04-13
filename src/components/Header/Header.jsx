@@ -67,7 +67,13 @@ export const Header = ({ language }) => {
             </a>
           </li>
           <li>
-            <a href="#contacts">
+            <a
+              href={getHref(navigationItems.CONTACTS)}
+              onClick={(event) => {
+                event.preventDefault();
+                buttonHandler(navigationItems.CONTACTS);
+              }}
+            >
               <FormattedMessage id="navigation-3" defaultMessage="Контакты" />
             </a>
           </li>
