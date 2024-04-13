@@ -1,4 +1,5 @@
 @import "src/styles/mixins";
+@import "src/styles/variables";
 
 .team {
   margin-top: 60px;
@@ -75,10 +76,15 @@
 
   &__image {
     img {
+      border-radius: 50%;
       width: 140px !important;
+      height: 140px !important;
+      border: 2px solid $blue;
 
       @include desktop {
+        border: 3px solid $blue;
         width: 200px !important;
+        height: 200px !important;
       }
     }
   }

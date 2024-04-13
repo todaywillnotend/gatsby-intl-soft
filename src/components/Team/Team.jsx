@@ -18,9 +18,7 @@ const getPersons = (intl) => [
       defaultMessage: `Senior product analyst\n
             Raiffeisen bank, ex Tinkoff`,
     }),
-    image: (
-      <StaticImage src="../../images/photo.png" width={140} height={140} />
-    ),
+    image: <StaticImage src="../../images/photo1.jpg" />,
   },
   {
     name: intl.formatMessage({
@@ -32,9 +30,7 @@ const getPersons = (intl) => [
       defaultMessage: `Backend developer
       ex Yandex`,
     }),
-    image: (
-      <StaticImage src="../../images/photo.png" width={140} height={140} />
-    ),
+    image: <StaticImage src="../../images/photo2.jpg" />,
   },
   {
     name: intl.formatMessage({
@@ -46,9 +42,7 @@ const getPersons = (intl) => [
       defaultMessage: `ML engineer
       ex Glidewell`,
     }),
-    image: (
-      <StaticImage src="../../images/photo.png" width={140} height={140} />
-    ),
+    image: <StaticImage src="../../images/photo3.jpg" />,
   },
 ];
 
@@ -67,13 +61,7 @@ export const Team = () => {
       <div className="team__content">
         {persons.map((person) => (
           <div className="person">
-            <div className="person__image">
-              <StaticImage
-                src="../../images/photo.png"
-                width={200}
-                height={200}
-              />
-            </div>
+            <div className="person__image">{person.image}</div>
             <p className="person__name">{person.name}</p>
             <p className="person__text">{person.text}</p>
           </div>

@@ -121,5 +121,11 @@
   },
   "services-title": {
     "defaultMessage": "Наши ключевые компетенции"
+  },
+  "team-description": {
+    "defaultMessage": "Наши сотрудники закончили топ ВУЗы и поработали в ведущих технологических компаниях"
+  },
+  "team-title": {
+    "defaultMessage": "Команда"
   }
 }
