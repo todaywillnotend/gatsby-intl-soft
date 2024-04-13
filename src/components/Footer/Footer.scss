@@ -1,0 +1,26 @@
+@import "src/styles/mixins";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 80px;
+  margin-bottom: 35px;
+
+  @include desktop() {
+    margin-bottom: 54px;
+  }
+}
+
+.logo {
+  svg {
+    width: 75px;
+    height: 17px;
+
+    @include desktop() {
+      width: 115px;
+      height: 32px;
+    }
+  }
+}

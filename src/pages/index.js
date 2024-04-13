@@ -1,18 +1,27 @@
 import React from "react";
-import { FormattedMessage } from "react-intl";
-import LinkTranslated from "../LinkTranslated";
 import SimpleLocalize from "../SimpleLocalize";
-import { Header, Wrapper, Main, Services, Team } from "../components/";
+import {
+  Header,
+  Wrapper,
+  Main,
+  Services,
+  Team,
+  Form,
+  Footer,
+} from "../components/";
 
 function IndexPage(props) {
-  // const language = props.pageContext.language;
+  const language = props.pageContext.language;
+
   return (
     <SimpleLocalize {...props}>
       <Wrapper>
-        <Header />
+        <Header language={language} />
         <Main />
         <Services />
         <Team />
+        <Form />
+        <Footer />
       </Wrapper>
     </SimpleLocalize>
   );

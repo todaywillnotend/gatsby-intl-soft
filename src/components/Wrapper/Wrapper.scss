@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;
   padding: 50px 27px;
+  padding-bottom: 0;
 
   @include desktop {
     padding: 50px 100px;
+    padding-bottom: 0;
   }
 }
 

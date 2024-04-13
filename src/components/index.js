@@ -5,3 +5,5 @@ export * from "./Main/Main";
 export * from "./Title/Title";
 export * from "./Services/Services";
 export * from "./Team/Team";
+export * from "./Form/Form";
+export * from "./Footer/Footer";

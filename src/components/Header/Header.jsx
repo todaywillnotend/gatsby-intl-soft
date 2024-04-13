@@ -1,5 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import cn from "classnames";
 
 import { Logo } from "../Logo/Logo";
 import { navigationItems } from "../../const";
@@ -16,7 +17,18 @@ function scrollTo(element) {
   });
 }
 
-export const Header = () => {
+export const Header = ({ language }) => {
+  const handleLanguageChange = () => {
+    switch (language) {
+      case "ru":
+        window.location.replace("/en");
+        break;
+      case "en":
+        window.location.replace("/");
+        break;
+    }
+  };
+
   const buttonHandler = (id) => {
     const block = document.getElementById(id);
 
@@ -61,8 +73,23 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-      <div>
-        <a href="/">Russian</a> <a href="/en">English </a>
+      <div className="language-toggle">
+        <div
+          className={cn("language-toggle__option", {
+            "language-toggle__option_active": language == "ru",
+          })}
+          onClick={handleLanguageChange}
+        >
+          <p>Рус</p>
+        </div>
+        <div
+          className={cn("language-toggle__option", {
+            "language-toggle__option_active": language == "en",
+          })}
+          onClick={handleLanguageChange}
+        >
+          <p>Eng</p>
+        </div>
       </div>
     </header>
   );
