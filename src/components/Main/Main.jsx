@@ -83,11 +83,10 @@ export const Main = () => {
               id="goal-title-1"
               defaultMessage="Рост вашего бизнеса"
             />
-          </span>
-          {" - "}
+          </span>{" "}
           <FormattedMessage
             id="goal-title-2"
-            defaultMessage="наша ключевая задача"
+            defaultMessage="- наша ключевая задача"
           />
         </p>
         <p className="goal__desc">

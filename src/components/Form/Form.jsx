@@ -129,15 +129,15 @@ export const Form = () => {
         </button>
       </div>
       <div className="form__social">
-        <a className="social" href="mailto:sales@softin.ru">
+        <a className="social" href="mailto:sales@softin.ru" target="__blank">
           <StaticImage src="../../images/icon-mail.png" width={40} />
           sales@softin.ru
         </a>
-        <a className="social" href="https://t.me/softin">
+        <a className="social" href="https://t.me/softi13n" target="__blank">
           <StaticImage src="../../images/icon-tg.png" width={40} />
-          t.me/softin
+          t.me/softi13n
         </a>
-        <a className="social" href="https://wa.me/">
+        <a className="social" href="https://wa.me/" target="__blank">
           <StaticImage src="../../images/icon-wa.png" width={40} />
           +7 (999) 999 99 99
         </a>

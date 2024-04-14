@@ -40,7 +40,7 @@ export const Header = ({ language }) => {
   return (
     <header className="header">
       <div className="logo">
-        <Logo />
+        <Logo width={100} height={26} />
       </div>
       <nav className="navigation">
         <ul>
