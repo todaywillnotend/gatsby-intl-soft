@@ -1,8 +1,5 @@
 # GatsbyJS: Multi-Language Website Example
 
-Building websites with GatsbyJS is super easy, but generating translations for them is a huge pain. This example GitHub repository shows how to quickly to create a multi-language website without any complex setup.
+[Figma](https://www.figma.com/file/nP3VVOeUDvfjU3PcGLFhQj/Soft-in-website?type=design&node-id=209-37796&mode=design&t=oXd64E4evf5W5HNR-0)
 
-[Read my blog post](https://simplelocalize.io/blog/posts/gatsby-i18n/) where I'm explaining every part of the code.
-
-![multi-language-gatsby-website-example](https://simplelocalize.io/blog/gatsby-multi-language.jpg)
-
+[GitHub Pages](https://todaywillnotend.github.io/gatsby-intl-soft/)

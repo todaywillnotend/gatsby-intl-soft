@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-intl-soft",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "https://github.com/todaywillnotend",
   "dependencies": {
     "classnames": "^2.5.1",
     "gatsby": "^3.15.0",
@@ -15,12 +15,15 @@
     "sass": "^1.75.0"
   },
   "devDependencies": {
-    "@formatjs/cli": "^4.2.29"
+    "@formatjs/cli": "^4.2.29",
+    "gh-pages": "^6.1.1"
   },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:prefix": "gatsby build --prefix-paths",
     "develop": "gatsby develop -p 3005",
+    "deploy": "npm run build:prefix && gh-pages -d public",
     "clean": "gatsby clean",
     "extract": "formatjs extract 'src/**/*.{ts,js,tsx,jsx}' --out-file i18n-extracted.json",
     "sync": "npm run extract && npm run upload-i18n && npm run download-i18n",
@@ -29,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/todaywillnotend/gatsby-intl-soft"
   }
 }

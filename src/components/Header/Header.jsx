@@ -1,6 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import cn from "classnames";
+import Link from "gatsby-link";
 
 import { Logo } from "../Logo/Logo";
 import { navigationItems } from "../../const";
@@ -80,22 +81,22 @@ export const Header = ({ language }) => {
         </ul>
       </nav>
       <div className="language-toggle">
-        <div
+        <Link
+          to="/"
           className={cn("language-toggle__option", {
             "language-toggle__option_active": language == "ru",
           })}
-          onClick={handleLanguageChange}
         >
           <p>Рус</p>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/en"
           className={cn("language-toggle__option", {
             "language-toggle__option_active": language == "en",
           })}
-          onClick={handleLanguageChange}
         >
           <p>Eng</p>
-        </div>
+        </Link>
       </div>
     </header>
   );
